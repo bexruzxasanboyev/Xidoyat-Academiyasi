@@ -8,203 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hidoya Akademiya</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box
-    }
-
-    .container {
-      max-width: 390px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 7px;
-      padding-right: 7px
-    }
-
-    .wrapper {
-      position: relative
-    }
-
-    .head__img {
-      max-width: 390px;
-      width: 100%;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1
-    }
-
-    .header {
-      max-width: 390px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      z-index: 11
-    }
-
-    .header__container {
-      max-width: 390px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #FFF;
-      border-bottom-right-radius: 24px;
-      border-bottom-left-radius: 24px;
-      padding: 19px 25px;
-      box-shadow: 0 1px 0 0 #706DF0
-    }
-
-    .header__row {
-      display: flex;
-      align-items: center;
-      gap: 10px
-    }
-
-    .header__text {
-      font-family: Inter;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 100%;
-      text-align: center;
-      color: #000
-    }
-
-    .hero {
-      padding-top: 34px;
-      padding-bottom: 34px;
-      position: relative;
-      z-index: 11
-    }
-
-    .hero__title {
-      font-family: Inter, sans-serif;
-      font-weight: 700;
-      font-size: clamp(20px, 7vw, 28px);
-      line-height: 35px;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 20px
-    }
-
-    .hero__title span {
-      color: #706DF0
-    }
-
-    .hero__inner {
-      display: flex;
-      align-items: center;
-      flex-direction: column
-    }
-
-    .logo {
-      height: auto;
-      max-width: 275px;
-      width: 100%
-    }
-
-    .inner__btn {
-      margin-top: -36px;
-      max-width: 347px;
-      width: 100%;
-      height: auto;
-      background-color: #fff0;
-      border: none;
-      cursor: pointer
-    }
-
-    .btn__img {
-      border: none;
-      max-width: 347px;
-      width: 100%
-    }
-
-    .timer {
-      font-family: Inter;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      border: 1px solid #160DFF;
-      max-width: 98px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10px 0;
-      border-radius: 5px;
-      margin-top: -15px
-    }
-
-    .learn {
-      padding-top: 1px
-    }
-
-    .learn__inner {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center
-    }
-
-    .inner__title {
-      font-family: Inter , sans-serif;
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 10px
-    }
-
-    .top__img {
-      height: auto
-    }
-
-    .bottom__img {
-      height: auto;
-      margin-top: -20px;
-      margin-bottom: 7px
-    }
-
-    .learn__row {
-      display: flex;
-      align-items: center;
-      justify-content: start;
-      gap: 10px;
-      max-width: 320px;
-      width: 100%;
-      margin-bottom: 16px
-    }
-
-    .learn__text {
-      font-family: Montserrat, sans-serif;
-      font-weight: 500;
-      font-size: clamp(14px, 4vw, 16px);
-      line-height: 25px
-    }
-
-    .learn__btn {
-      margin-top: -10px;
-      max-width: 347px;
-      width: 100%;
-      height: auto;
-      background-color: #fff0;
-      border: none;
-      cursor: pointer;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex
-    }
+  * { margin: 0; padding: 0; box-sizing: border-box } .container { max-width: 390px; margin-left: auto; margin-right: auto; padding-left: 7px; padding-right: 7px } .wrapper { position: relative } .head__img { max-width: 390px; width: 100%; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); z-index: 1 } .header { max-width: 390px; margin-left: auto; margin-right: auto; position: relative; z-index: 11 } .header__container { max-width: 390px; display: flex; align-items: center; justify-content: space-between; background-color: #FFF; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; padding: 19px 25px; box-shadow: 0 1px 0 0 #706DF0 } .header__row { display: flex; align-items: center; gap: 10px } .header__text { font-family: Inter, sans-serif; font-weight: 500; font-size: 16px; line-height: 100%; text-align: center; color: #000 } .hero { padding-top: 34px; padding-bottom: 34px; position: relative; z-index: 11 } .hero__title { font-family: Inter, sans-serif; font-weight: 700; font-size: clamp(20px, 7vw, 28px); line-height: 35px; text-align: center; text-transform: uppercase; margin-bottom: 20px } .hero__title span { color: #706DF0 } .hero__inner { display: flex; align-items: center; flex-direction: column } .logo { height: auto; max-width: 275px; width: 100% } .inner__btn { margin-top: -36px; max-width: 347px; width: 100%; height: auto; background-color: #fff0; border: none; cursor: pointer } .btn__img { border: none; max-width: 347px; width: 100% } .timer { font-family: Inter, sans-serif; font-weight: 700; font-size: 26px; line-height: 25px; text-align: center; text-transform: uppercase; border: 1px solid #160DFF; max-width: 98px; width: 100%; margin-left: auto; margin-right: auto; padding: 10px 0; border-radius: 5px; margin-top: -15px } .learn { padding-top: 1px } .learn__inner { display: flex; align-items: center; flex-direction: column; justify-content: center } .inner__title { font-family: Inter, sans-serif; font-weight: 700; font-size: 22px; line-height: 25px; text-align: center; text-transform: uppercase; margin-bottom: 10px } .top__img { height: auto } .bottom__img { height: auto; margin-top: -20px; margin-bottom: 7px } .learn__row { display: flex; align-items: center; justify-content: start; gap: 10px; max-width: 320px; width: 100%; margin-bottom: 16px } .learn__text { font-family: Montserrat, sans-serif; font-weight: 500; font-size: clamp(14px, 4vw, 16px); line-height: 25px } .learn__btn { margin-top: -10px; max-width: 347px; width: 100%; height: auto; background-color: #fff0; border: none; cursor: pointer; margin-left: auto; margin-right: auto; display: flex }
   </style>
-  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="./css/main.css" />
-  </noscript>
 </head>
 
 <body>
+  <main>
   <div class="wrapper">
     <img src="./images/wrapper__img.avif" width="390" height="553" loading="lazy" decoding="async" alt="wrapper"
       class="head__img">
@@ -223,24 +32,24 @@
       </div>
     </header>
 
-      <section class="hero">
-        <div class="hero__container container">
-          <h2 class="hero__title">
-            Қандай қилиб араб <br> тилини <span>0 дан осон ва <br> тез ўрганиш</span> мумкин?
-          </h2>
-          <div class="hero__inner">
-            <img src="./images/logo.avif" width="295" height="295" fetchpriority="high" decoding="async" alt="logo"
-              class="logo">
-            <button class="inner__btn" id="open" aria-label="Kursga yozilish">
-              <img src="./images/btn.svg" width="347" height="140" loading="lazy" decoding="async" alt=""
-                class="btn__img">
-            </button>
-          </div>
-          <div class="timer-container">
-            <p class="timer" id="timer">00:00</p>
-          </div>
+    <section class="hero">
+      <div class="hero__container container">
+        <h2 class="hero__title">
+          Қандай қилиб араб <br> тилини <span>0 дан осон ва <br> тез ўрганиш</span> мумкин?
+        </h2>
+        <div class="hero__inner">
+          <img src="./images/logo.avif" width="295" height="295" fetchpriority="high" decoding="async" alt="logo"
+            class="logo">
+          <button class="inner__btn registerBtn" id="open" aria-label="Kursga yozilish">
+            <img src="./images/btn.svg" width="347" height="140" loading="lazy" decoding="async" alt=""
+              class="btn__img">
+          </button>
         </div>
-      </section>
+        <div class="timer-container">
+          <p class="timer" id="timer">00:00</p>
+        </div>
+      </div>
+    </section>
   </div>
 
   <section class="learn">
@@ -249,29 +58,29 @@
         <h2 class="inner__title">Бепул дарсда сиз:</h2>
         <img src="./images/top.avif" width="330" height="36" loading="lazy" decoding="async" alt="img" class="top__img">
         <div class="learn__row">
-          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async" style="width: 30px; height: 30px;" alt="img"
-            class="checkmarks">
+          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async"
+            style="width: 30px; height: 30px;" alt="img" class="checkmarks">
           <p class="learn__text">
-            Араб тилини қаердан ва нимадан <b><br> бошлашни билиб оласиз</b> 
+            Араб тилини қаердан ва нимадан <b><br> бошлашни билиб оласиз</b>
           </p>
         </div>
         <div class="learn__row">
-          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async" style="width: 30px; height: 30px;" alt="img"
-            class="checkmarks">
+          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async"
+            style="width: 30px; height: 30px;" alt="img" class="checkmarks">
           <p class="learn__text">
             Кунига 30 дақиқа сарфлаб <b>самарали <br> дарс қилиш усулларини</b> ўрганасиз
           </p>
         </div>
         <div class="learn__row">
-          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async" style="width: 30px; height: 30px;" alt="img"
-            class="checkmarks">
+          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async"
+            style="width: 30px; height: 30px;" alt="img" class="checkmarks">
           <p class="learn__text">
-            Қуръон ўқишда муҳим, лекин <b><br> кўпчилик сезмайдиган хатолар</b> 
+            Қуръон ўқишда муҳим, лекин <b><br> кўпчилик сезмайдиган хатолар</b>
           </p>
         </div>
         <div class="learn__row">
-          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async" style="width: 30px; height: 30px;" alt="img"
-            class="checkmarks">
+          <img src="./images/checkmarks 2.svg" width="40" height="40" loading="lazy" decoding="async"
+            style="width: 30px; height: 30px;" alt="img" class="checkmarks">
           <p class="learn__text">
             <b>Араб тилини ўрганишдаги 5 та энг</b> <br> муҳим қадамни
             билиб оласиз
@@ -280,62 +89,15 @@
         <img src="./images/bottom.avif" width="330" height="36" loading="lazy" decoding="async" alt="img"
           class="bottom__img">
       </div>
-      <button class="learn__btn" id="open" aria-label="Kursga yozilish">
+      <button class="learn__btn registerBtn" id="open" aria-label="Kursga yozilish">
         <img src="./images/btn.svg" width="347" height="140" loading="lazy" decoding="async" alt="" class="btn__img">
       </button>
     </div>
   </section>
-  
-  <div id="registrationModal" class="homeModal" style="display: none">
-    <div class="homeModalOverlay"></div>
-    <div class="homeFormContainer">
-      <button class="closeButton" id="closeModalBtn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
-          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-        </svg>
-      </button>
-      <div class="homeFormTop">
-        <h1 class="homeFormTopTitle">
-          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
-        </h1>
-      </div>
-      <form id="registrationForm" name="contact-form">
-        <div class="HomeFormRow">
-          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
-          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
-            autocomplete="name" />
-          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
-        </div>
+  </main>
 
-        <div class="HomeFormRow">
-          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
-          <div class="phone-input-container">
-            <button type="button" class="selected-country" id="selectedCountry">
-              <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
-              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-              <span class="selected-code" id="selectedCountryCodeText">+998</span>
-            </button>
-            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
-            <div class="phone-field" style="flex: 1;">
-              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
-                placeholder="88 888 88 88" autocomplete="tel"
-                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
-            </div>
-          </div>
-          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
-        </div>
-
-        <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
-      </form>
-    </div>
-  </div>
-
-  <script defer src="./js/phoneFormatter.js"></script>
-  <script defer src="./js/app.js"></script>
-
+  <script defer>document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".registerBtn").forEach(e=>{e.addEventListener("click",()=>{"function"==typeof fbq&&fbq("track","CompleteRegistration")})})});</script>
+  <script src="../js/app.js" defer></script>
 </body>
 
 </html>
